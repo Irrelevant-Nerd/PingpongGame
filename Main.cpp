@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "UserDefinedHeaders\\Random.h"
+#include "include/Random.h"
 #include <iostream>
 
 void restart(sf::RectangleShape& rect1, sf::RectangleShape& rect2, sf::CircleShape& ball, int wWIDTH, int wHEIGHT)
@@ -26,7 +26,7 @@ void bounceYDirection(int yDirection, float* ballYSpeed)
             break;
         case 2:
             *ballYSpeed = 7.0f;
-            break;             
+            break;
     }
 }
 
@@ -40,7 +40,7 @@ void checkRectBorderCollision(sf::RectangleShape& rect, int wHEIGHT)
             rect.getPosition().x,
             wHEIGHT - rect.getSize().y / 2.0f
         });
-    } 
+    }
 
     // if it hits the top
     if(rect.getPosition().y - rect.getSize().y / 2.0f < 0)
@@ -87,7 +87,7 @@ void checkCollisionBetweenBallAndRects(sf::RectangleShape& rect1, sf::RectangleS
         *ballXSpeed*=-1.0;
         bounceYDirection(yDirection, ballYSpeed);
     }
-}   
+}
 
 void ball_movement(sf::CircleShape& ball, float ballXSpeed, float ballYSpeed)
 {
@@ -119,7 +119,7 @@ void rect1_movement(sf::RectangleShape& rect1, float rectYSpeed)
     }
 }
 
-int main() 
+int main()
 {
     const int wWIDTH {1000};
     const int wHEIGHT {520};
@@ -158,7 +158,7 @@ int main()
     int player1Score{0};
     int player2Score{0};
 
-    sf::Font font("Fonts\\Roboto\\Roboto-Regular.ttf");
+    sf::Font font("C:/Users/THIS PC/AppData/Local/Microsoft/Windows/Fonts/FiraCode-Regular.ttf");
     sf::Text player1ScoreText(font);
     player1ScoreText.setCharacterSize(20);
     player1ScoreText.setFillColor(sf::Color::White);
@@ -187,7 +187,7 @@ int main()
         checkRectBorderCollision(rect2, wHEIGHT);
 
         checkCollisionBetweenBallAndRects(rect1, rect2, ball, &ballXSpeed, &ballYSpeed);
-        
+
         if(checkBallBorderCollisionX(ball, wWIDTH, &ballXSpeed, &player1Score, &player2Score))
         {
             restart(rect1, rect2, ball, wWIDTH, wHEIGHT);
