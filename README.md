@@ -19,4 +19,4 @@
 - ` Start setting up the mingw64 and SFML, watch this video: ` https://youtu.be/RHrU3I1nsEI?si=pfwVPEmX16rw6lim
 
 ### Contribution
-` Everyone can clone or fork this project for their own usage, I'd also appreciate any feedback from this project to significantly improve it. For now this game doesn't have real physics implementation. The ball horizontal and diagonal movement is randomly generated, soon I'll be implementing real physics to this game `
+Everyone can clone or fork this project for their own usage, I'd also appreciate any feedback from this project to significantly improve it. For now this game doesn't have real physics implementation. The ball horizontal and diagonal movement is randomly generated, soon I'll be implementing real physics to this game
