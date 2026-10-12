@@ -3,14 +3,14 @@
 ## A simple digital sport game where two people can play against each other in the same computer
 
 ### Language, Tool and library used
-- ` C++`
+- ` C++ `
 - ` VS Code `
 - ` SFML 3 `
 
 ### How it works
 - ` Player 1 from left moves vertically by pressing W and S key `
 - ` Player 2 from right moves vertically by pressing UP and DOWN arrow key `
-- ` Score of both player will be displayed at the top`
+- ` Score of both player will be displayed at the top `
 
 ### How to install and play
 - ` Download MYSYS2 from official website ` https://www.msys2.org/
